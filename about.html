@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About - Felice Fernaldy</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        .font-portfolio {
+            font-family: 'Oswald', sans-serif;
+            letter-spacing: -0.01em;
+        }
+
+        .font-body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        .bg-grid-pattern {
+            background-size: 30px 30px;
+            background-image:
+                linear-gradient(to right, rgba(0, 56, 95, 0.04) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(0, 56, 95, 0.04) 1px, transparent 1px);
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 font-body min-h-screen bg-grid-pattern relative flex flex-col justify-between overflow-x-hidden p-6">
+
+    <!-- NAVIGATION -->
+    <nav class="w-full max-w-6xl mx-auto flex items-center justify-end py-4 z-20">
+
+        <div class="flex items-center gap-8 font-bold text-sm text-slate-600">
+
+            <a href="index.html"
+               class="hover:text-[#00385F] transition-colors">
+                Home Page
+            </a>
+
+            <a href="about.html"
+               class="text-[#00385F] font-extrabold border-b-2 border-[#00385F] pb-0.5">
+                About
+            </a>
+
+            <a href="projects.html"
+               class="hover:text-[#00385F] transition-colors">
+                Project
+            </a>
+
+            <a href="contact.html"
+               class="bg-[#00385F] text-white px-5 py-2.5 rounded-xl hover:bg-[#002845] transition-all text-xs uppercase tracking-wider font-extrabold shadow-md">
+                Contact
+            </a>
+
+        </div>
+    </nav>
+
+
+    <!-- MAIN -->
+    <main class="w-full mx-auto my-auto flex flex-col py-8 z-10">
+
+        <!-- INTRODUCTION -->
+        <section class="relative max-w-5xl w-full mx-auto py-6">
+
+            <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+
+                <!-- Decorative -->
+                <div class="absolute -top-4 left-10 w-4 h-4 bg-yellow-400 rounded-full"></div>
+
+                <div class="absolute top-8 right-2 text-emerald-500 text-3xl font-bold">
+                    ✦
+                </div>
+
+
+                <!-- TEXT -->
+                <div class="flex-1 space-y-4">
+
+                    <span class="inline-block bg-blue-100/80 text-[#00385F] text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-widest">
+                        About Me
+                    </span>
+
+                    <h1 class="font-portfolio text-6xl md:text-7xl text-[#00385F] uppercase font-bold tracking-tight">
+                        INTRODUCTION
+                    </h1>
+
+                    <p class="text-[#00385F]/90 text-base md:text-lg leading-relaxed font-medium">
+
+                        I am a Computer Science student at BINUS University
+                        specializing in
+                        <span class="font-bold text-[#00385F]">
+                            Data Analytics
+                        </span>
+                        and
+                        <span class="font-bold text-[#00385F]">
+                            Artificial Intelligence
+                        </span>.
+
+                        Passionate about transforming complex datasets into
+                        actionable insights and building data driven technology
+                        solutions.
+
+                    </p>
+
+                </div>
+
+
+                <!-- PROFILE PHOTO -->
+                <div class="w-full md:w-80 h-96 rounded-3xl overflow-hidden shadow-xl border-4 border-white flex-shrink-0">
+
+                    <img
+                        src="images/profile.png"
+                        alt="Felice Fernaldy"
+                        class="w-full h-full object-cover object-center"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DIVIDER -->
+        <div class="w-full h-[2px] bg-gradient-to-r from-transparent via-slate-300 to-transparent my-12"></div>
+
+
+        <!-- EDUCATION -->
+        <section class="relative max-w-5xl w-full mx-auto py-6">
+
+            <div class="flex flex-col md:flex-row items-center justify-between gap-10 md:gap-16">
+
+                <div class="space-y-5 flex-1">
+
+                    <span class="inline-block bg-blue-100/80 text-[#00385F] text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-widest">
+                        Academic Background
+                    </span>
+
+                    <h2 class="font-portfolio text-6xl md:text-7xl text-[#00385F] uppercase font-bold tracking-tight">
+                        EDUCATION
+                    </h2>
+
+                    <div class="bg-[#00385F] text-white px-6 py-3 rounded-xl text-lg md:text-xl font-bold uppercase tracking-wide inline-block shadow-lg">
+                        BINA NUSANTARA UNIVERSITY
+                    </div>
+
+                    <div class="space-y-1 pl-1">
+
+                        <h3 class="text-xl md:text-2xl font-extrabold text-[#00385F] uppercase tracking-wider">
+                            COMPUTER SCIENCE
+                        </h3>
+
+                        <p class="text-[#00385F]/70 font-bold text-sm tracking-widest">
+                            2024 – PRESENT
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BINUS PHOTO -->
+                <div class="w-full md:w-[26rem] h-80 rounded-[40px] overflow-hidden shadow-xl border-4 border-white flex-shrink-0">
+
+                    <img
+                        src="images/binus.png"
+                        alt="Bina Nusantara University"
+                        class="w-full h-full object-cover"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DIVIDER -->
+        <div class="w-full h-[2px] bg-gradient-to-r from-transparent via-slate-300 to-transparent my-12"></div>
+
+
+        <!-- ORGANIZATIONAL EXPERIENCE -->
+        <section class="relative max-w-5xl w-full mx-auto space-y-8 py-6">
+
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+
+                <div class="space-y-2 max-w-2xl">
+
+                    <span class="inline-block bg-blue-100/80 text-[#00385F] text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-widest">
+                        Community & Leadership
+                    </span>
+
+                    <h2 class="font-portfolio text-5xl md:text-6xl text-[#00385F] uppercase font-bold tracking-tight leading-none">
+                        ORGANIZATIONAL & LEADERSHIP EXPERIENCE
+                    </h2>
+
+                </div>
+
+
+                <!-- AIESEC LOGO -->
+                <div class="flex-shrink-0">
+
+                    <img
+                        src="images/aiesec.png"
+                        alt="AIESEC Logo"
+                        class="h-36 md:h-44 w-auto object-contain"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- EXPERIENCE CARDS -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <!-- AIESEC FUTURE LEADERS -->
+                <div class="bg-white/80 border border-slate-200/80 p-6 md:p-8 rounded-2xl shadow-sm hover:shadow-md transition-all">
+
+                    <h3 class="text-lg md:text-xl font-extrabold text-[#00385F] tracking-wide uppercase border-b border-slate-100 pb-3">
+
+                        AIESEC FUTURE LEADERS
+
+                        <span class="block text-xs font-bold text-slate-400 mt-1">
+                            COACH & DELEGATE
+                        </span>
+
+                    </h3>
+
+                    <ul class="space-y-2 text-sm md:text-base font-medium text-[#00385F]/90 leading-relaxed mt-4">
+
+                        <li>▪ Mentored delegates in public speaking and core leadership capabilities.</li>
+
+                        <li>▪ Facilitated team case study analysis and problem-solving sessions.</li>
+
+                        <li>▪ Participated in national leadership training programs.</li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- GLOBAL VOLUNTEER -->
+                <div class="bg-white/80 border border-slate-200/80 p-6 md:p-8 rounded-2xl shadow-sm hover:shadow-md transition-all">
+
+                    <h3 class="text-lg md:text-xl font-extrabold text-[#00385F] tracking-wide uppercase border-b border-slate-100 pb-3">
+
+                        AIESEC GLOBAL VOLUNTEER
+
+                        <span class="block text-xs font-bold text-slate-400 mt-1">
+                            VOLUNTEER EDUCATOR — DI LINH, VIETNAM | 2026
+                        </span>
+
+                    </h3>
+
+                    <ul class="space-y-2 text-sm md:text-base font-medium text-[#00385F]/90 leading-relaxed mt-4">
+
+                        <li>▪ Designed English learning materials and taught local students.</li>
+
+                        <li>▪ Collaborated with an international team to deliver interactive, cross-cultural learning experiences.</li>
+
+                        <li>▪ Facilitated cultural exchange activities to foster global awareness.</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DIVIDER -->
+        <div class="w-full h-[2px] bg-gradient-to-r from-transparent via-slate-300 to-transparent my-12"></div>
+
+
+        <!-- SKILLS -->
+        <section class="relative max-w-5xl w-full mx-auto space-y-8 py-6">
+
+            <div class="text-center">
+
+                <h2 class="font-portfolio text-6xl md:text-7xl text-[#00385F] uppercase font-bold tracking-tight">
+                    SKILLS & EXPERTISE
+                </h2>
+
+            </div>
+
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <!-- TECHNICAL -->
+                <div class="md:col-span-2 space-y-4">
+
+                    <h3 class="font-portfolio text-2xl md:text-3xl text-[#00385F] uppercase font-bold">
+                        ● TECHNICAL SKILLS
+                    </h3>
+
+                    <div class="bg-white/80 border border-slate-200/80 rounded-2xl p-6 md:p-8 space-y-5 text-[#00385F] shadow-sm">
+
+                        <div class="border-b border-slate-100 pb-3">
+
+                            <h4 class="font-extrabold text-sm md:text-base tracking-wider uppercase">
+                                DATA ANALYTICS & BI
+                            </h4>
+
+                            <p class="text-xs md:text-sm font-semibold tracking-wide text-slate-600 mt-1">
+                                DATA ANALYTICS • DATA VISUALIZATION • DATA MINING • POWER BI
+                            </p>
+
+                        </div>
+
+
+                        <div class="border-b border-slate-100 pb-3">
+
+                            <h4 class="font-extrabold text-sm md:text-base tracking-wider uppercase">
+                                DATABASE & QUERYING
+                            </h4>
+
+                            <p class="text-xs md:text-sm font-semibold tracking-wide text-slate-600 mt-1">
+                                SQL • DATABASE TECHNOLOGY • DATABASE DESIGN
+                            </p>
+
+                        </div>
+
+
+                        <div class="border-b border-slate-100 pb-3">
+
+                            <h4 class="font-extrabold text-sm md:text-base tracking-wider uppercase">
+                                PROGRAMMING & LIBRARIES
+                            </h4>
+
+                            <p class="text-xs md:text-sm font-semibold tracking-wide text-slate-600 mt-1">
+                                PYTHON • PANDAS • NUMPY • MATPLOTLIB • SEABORN
+                            </p>
+
+                        </div>
+
+
+                        <div>
+
+                            <h4 class="font-extrabold text-sm md:text-base tracking-wider uppercase">
+                                MATH & AI METHODS
+                            </h4>
+
+                            <p class="text-xs md:text-sm font-semibold tracking-wide text-slate-600 mt-1">
+                                BASIC STATISTICS • LINEAR ALGEBRA • PREDICTIVE ANALYTICS • AI / MACHINE LEARNING
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SOFT SKILLS -->
+                <div class="space-y-4">
+
+                    <h3 class="font-portfolio text-2xl md:text-3xl text-[#00385F] uppercase font-bold">
+                        ● SOFT SKILLS
+                    </h3>
+
+                    <div class="bg-white/80 border border-slate-200/80 rounded-2xl p-6 md:p-8 shadow-sm">
+
+                        <ul class="space-y-3 font-extrabold text-xs md:text-sm tracking-wider uppercase text-slate-700">
+
+                            <li class="bg-slate-100 p-3 rounded-xl text-center">
+                                Problem Solving
+                            </li>
+
+                            <li class="bg-slate-100 p-3 rounded-xl text-center">
+                                Data Storytelling
+                            </li>
+
+                            <li class="bg-slate-100 p-3 rounded-xl text-center">
+                                Analytical Mindset
+                            </li>
+
+                            <li class="bg-slate-100 p-3 rounded-xl text-center">
+                                Cross Functional Communication
+                            </li>
+
+                            <li class="bg-slate-100 p-3 rounded-xl text-center">
+                                Leadership
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="w-full max-w-6xl mx-auto text-center text-xs font-bold text-slate-400 py-6 border-t border-slate-200/60 mt-8">
+
+        © Felice Fernaldy • Portfolio
+
+    </footer>
+
+</body>
+</html>
