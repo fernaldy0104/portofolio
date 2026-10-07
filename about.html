@@ -34,65 +34,72 @@
     </style>
 </head>
 
-<body class="bg-slate-50 text-slate-800 font-body min-h-screen bg-grid-pattern relative flex flex-col justify-between overflow-x-hidden p-6">
+<body class="bg-slate-50 text-slate-800 font-body min-h-screen bg-grid-pattern relative flex flex-col justify-between overflow-x-hidden p-4 md:p-6">
 
-    <!-- NAVIGATION -->
-    <nav class="w-full max-w-6xl mx-auto flex items-center justify-end py-4 z-20">
 
-        <div class="flex items-center gap-8 font-bold text-sm text-slate-600">
+    <!-- ================= NAVIGATION ================= -->
+
+    <nav class="w-full max-w-6xl mx-auto flex items-center justify-end py-3 md:py-4 z-20">
+
+        <div class="flex items-center gap-3 md:gap-8 font-bold text-[11px] md:text-sm text-slate-600">
 
             <a href="index.html"
-               class="hover:text-[#00385F] transition-colors">
-                Home Page
+               class="hover:text-[#00385F] transition-colors whitespace-nowrap">
+                Home
             </a>
 
             <a href="about.html"
-               class="text-[#00385F] font-extrabold border-b-2 border-[#00385F] pb-0.5">
+               class="text-[#00385F] font-extrabold border-b-2 border-[#00385F] pb-0.5 whitespace-nowrap">
                 About
             </a>
 
             <a href="projects.html"
-               class="hover:text-[#00385F] transition-colors">
+               class="hover:text-[#00385F] transition-colors whitespace-nowrap">
                 Project
             </a>
 
             <a href="contact.html"
-               class="bg-[#00385F] text-white px-5 py-2.5 rounded-xl hover:bg-[#002845] transition-all text-xs uppercase tracking-wider font-extrabold shadow-md">
+               class="bg-[#00385F] text-white px-3 py-2 md:px-5 md:py-2.5 rounded-xl hover:bg-[#002845] transition-all text-[9px] md:text-xs uppercase tracking-wider font-extrabold shadow-md whitespace-nowrap">
                 Contact
             </a>
 
         </div>
+
     </nav>
 
 
-    <!-- MAIN -->
-    <main class="w-full mx-auto my-auto flex flex-col py-8 z-10">
+    <!-- ================= MAIN ================= -->
 
-        <!-- INTRODUCTION -->
-        <section class="relative max-w-5xl w-full mx-auto py-6">
+    <main class="w-full mx-auto my-auto flex flex-col py-6 md:py-8 z-10">
 
-            <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+
+        <!-- ================= INTRODUCTION ================= -->
+
+        <section class="relative max-w-5xl w-full mx-auto py-6 md:py-10">
+
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
 
                 <!-- Decorative -->
-                <div class="absolute -top-4 left-10 w-4 h-4 bg-yellow-400 rounded-full"></div>
+                <div class="absolute -top-2 md:-top-4 left-4 md:left-10 w-3 h-3 md:w-4 md:h-4 bg-yellow-400 rounded-full"></div>
 
-                <div class="absolute top-8 right-2 text-emerald-500 text-3xl font-bold">
+                <div class="absolute top-4 md:top-8 right-1 md:right-2 text-emerald-500 text-2xl md:text-3xl font-bold">
                     ✦
                 </div>
 
 
                 <!-- TEXT -->
-                <div class="flex-1 space-y-4">
 
-                    <span class="inline-block bg-blue-100/80 text-[#00385F] text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-widest">
+                <div class="flex-1 space-y-4 text-center md:text-left">
+
+                    <span class="inline-block bg-blue-100/80 text-[#00385F] text-[10px] md:text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-widest">
                         About Me
                     </span>
 
-                    <h1 class="font-portfolio text-6xl md:text-7xl text-[#00385F] uppercase font-bold tracking-tight">
+                    <h1 class="font-portfolio text-5xl sm:text-6xl md:text-7xl text-[#00385F] uppercase font-bold tracking-tight">
                         INTRODUCTION
                     </h1>
 
-                    <p class="text-[#00385F]/90 text-base md:text-lg leading-relaxed font-medium">
+                    <p class="text-[#00385F]/90 text-sm sm:text-base md:text-lg leading-relaxed font-medium">
 
                         I am a Computer Science student at BINUS University
                         specializing in
@@ -114,10 +121,11 @@
 
 
                 <!-- PROFILE PHOTO -->
-                <div class="w-full md:w-80 h-96 rounded-3xl overflow-hidden shadow-xl border-4 border-white flex-shrink-0">
+
+                <div class="w-full max-w-[18rem] md:w-80 h-80 sm:h-96 rounded-3xl overflow-hidden shadow-xl border-4 border-white flex-shrink-0">
 
                     <img
-                        src="profile.png"
+                        src="https://fernaldy0104.github.io/portofolio/profile.png"
                         alt="Felice Fernaldy"
                         class="w-full h-full object-cover object-center"
                     >
@@ -130,35 +138,40 @@
 
 
         <!-- DIVIDER -->
-        <div class="w-full h-[2px] bg-gradient-to-r from-transparent via-slate-300 to-transparent my-12"></div>
+
+        <div class="w-full h-[2px] bg-gradient-to-r from-transparent via-slate-300 to-transparent my-8 md:my-12"></div>
 
 
-        <!-- EDUCATION -->
-        <section class="relative max-w-5xl w-full mx-auto py-6">
+        <!-- ================= EDUCATION ================= -->
 
-            <div class="flex flex-col md:flex-row items-center justify-between gap-10 md:gap-16">
+        <section class="relative max-w-5xl w-full mx-auto py-6 md:py-10">
 
-                <div class="space-y-5 flex-1">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-16">
 
-                    <span class="inline-block bg-blue-100/80 text-[#00385F] text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-widest">
+
+                <!-- TEXT -->
+
+                <div class="space-y-5 flex-1 text-center md:text-left">
+
+                    <span class="inline-block bg-blue-100/80 text-[#00385F] text-[10px] md:text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-widest">
                         Academic Background
                     </span>
 
-                    <h2 class="font-portfolio text-6xl md:text-7xl text-[#00385F] uppercase font-bold tracking-tight">
+                    <h2 class="font-portfolio text-5xl sm:text-6xl md:text-7xl text-[#00385F] uppercase font-bold tracking-tight">
                         EDUCATION
                     </h2>
 
-                    <div class="bg-[#00385F] text-white px-6 py-3 rounded-xl text-lg md:text-xl font-bold uppercase tracking-wide inline-block shadow-lg">
+                    <div class="bg-[#00385F] text-white px-5 py-3 rounded-xl text-base sm:text-lg md:text-xl font-bold uppercase tracking-wide inline-block shadow-lg">
                         BINA NUSANTARA UNIVERSITY
                     </div>
 
                     <div class="space-y-1 pl-1">
 
-                        <h3 class="text-xl md:text-2xl font-extrabold text-[#00385F] uppercase tracking-wider">
+                        <h3 class="text-lg md:text-2xl font-extrabold text-[#00385F] uppercase tracking-wider">
                             COMPUTER SCIENCE
                         </h3>
 
-                        <p class="text-[#00385F]/70 font-bold text-sm tracking-widest">
+                        <p class="text-[#00385F]/70 font-bold text-xs md:text-sm tracking-widest">
                             2024 – PRESENT
                         </p>
 
@@ -168,10 +181,11 @@
 
 
                 <!-- BINUS PHOTO -->
-                <div class="w-full md:w-[26rem] h-80 rounded-[40px] overflow-hidden shadow-xl border-4 border-white flex-shrink-0">
+
+                <div class="w-full max-w-[20rem] md:w-[26rem] h-64 sm:h-72 md:h-80 rounded-[30px] md:rounded-[40px] overflow-hidden shadow-xl border-4 border-white flex-shrink-0">
 
                     <img
-                        src="binus.png"
+                        src="https://fernaldy0104.github.io/portofolio/binus.png"
                         alt="Bina Nusantara University"
                         class="w-full h-full object-cover"
                     >
@@ -184,21 +198,26 @@
 
 
         <!-- DIVIDER -->
-        <div class="w-full h-[2px] bg-gradient-to-r from-transparent via-slate-300 to-transparent my-12"></div>
+
+        <div class="w-full h-[2px] bg-gradient-to-r from-transparent via-slate-300 to-transparent my-8 md:my-12"></div>
 
 
-        <!-- ORGANIZATIONAL EXPERIENCE -->
-        <section class="relative max-w-5xl w-full mx-auto space-y-8 py-6">
+        <!-- ================= ORGANIZATIONAL EXPERIENCE ================= -->
+
+        <section class="relative max-w-5xl w-full mx-auto space-y-8 py-6 md:py-10">
+
+
+            <!-- HEADER -->
 
             <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
 
-                <div class="space-y-2 max-w-2xl">
+                <div class="space-y-2 max-w-2xl text-center md:text-left">
 
-                    <span class="inline-block bg-blue-100/80 text-[#00385F] text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-widest">
+                    <span class="inline-block bg-blue-100/80 text-[#00385F] text-[10px] md:text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-widest">
                         Community & Leadership
                     </span>
 
-                    <h2 class="font-portfolio text-5xl md:text-6xl text-[#00385F] uppercase font-bold tracking-tight leading-none">
+                    <h2 class="font-portfolio text-4xl sm:text-5xl md:text-6xl text-[#00385F] uppercase font-bold tracking-tight leading-none">
                         ORGANIZATIONAL & LEADERSHIP EXPERIENCE
                     </h2>
 
@@ -206,12 +225,13 @@
 
 
                 <!-- AIESEC LOGO -->
-                <div class="flex-shrink-0">
+
+                <div class="flex-shrink-0 flex justify-center">
 
                     <img
-                        src="aiesec.png"
+                        src="https://fernaldy0104.github.io/portofolio/aiesec.png"
                         alt="AIESEC Logo"
-                        class="h-36 md:h-44 w-auto object-contain"
+                        class="h-28 md:h-44 w-auto object-contain"
                     >
 
                 </div>
@@ -220,16 +240,19 @@
 
 
             <!-- EXPERIENCE CARDS -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
+
 
                 <!-- AIESEC FUTURE LEADERS -->
-                <div class="bg-white/80 border border-slate-200/80 p-6 md:p-8 rounded-2xl shadow-sm hover:shadow-md transition-all">
 
-                    <h3 class="text-lg md:text-xl font-extrabold text-[#00385F] tracking-wide uppercase border-b border-slate-100 pb-3">
+                <div class="bg-white/80 border border-slate-200/80 p-5 md:p-8 rounded-2xl shadow-sm hover:shadow-md transition-all">
+
+                    <h3 class="text-base md:text-xl font-extrabold text-[#00385F] tracking-wide uppercase border-b border-slate-100 pb-3">
 
                         AIESEC FUTURE LEADERS
 
-                        <span class="block text-xs font-bold text-slate-400 mt-1">
+                        <span class="block text-[10px] md:text-xs font-bold text-slate-400 mt-1">
                             COACH & DELEGATE
                         </span>
 
@@ -249,13 +272,14 @@
 
 
                 <!-- GLOBAL VOLUNTEER -->
-                <div class="bg-white/80 border border-slate-200/80 p-6 md:p-8 rounded-2xl shadow-sm hover:shadow-md transition-all">
 
-                    <h3 class="text-lg md:text-xl font-extrabold text-[#00385F] tracking-wide uppercase border-b border-slate-100 pb-3">
+                <div class="bg-white/80 border border-slate-200/80 p-5 md:p-8 rounded-2xl shadow-sm hover:shadow-md transition-all">
+
+                    <h3 class="text-base md:text-xl font-extrabold text-[#00385F] tracking-wide uppercase border-b border-slate-100 pb-3">
 
                         AIESEC GLOBAL VOLUNTEER
 
-                        <span class="block text-xs font-bold text-slate-400 mt-1">
+                        <span class="block text-[10px] md:text-xs font-bold text-slate-400 mt-1">
                             VOLUNTEER EDUCATOR — DI LINH, VIETNAM | 2026
                         </span>
 
@@ -279,31 +303,37 @@
 
 
         <!-- DIVIDER -->
-        <div class="w-full h-[2px] bg-gradient-to-r from-transparent via-slate-300 to-transparent my-12"></div>
+
+        <div class="w-full h-[2px] bg-gradient-to-r from-transparent via-slate-300 to-transparent my-8 md:my-12"></div>
 
 
-        <!-- SKILLS -->
-        <section class="relative max-w-5xl w-full mx-auto space-y-8 py-6">
+        <!-- ================= SKILLS ================= -->
+
+        <section class="relative max-w-5xl w-full mx-auto space-y-8 py-6 md:py-10">
+
 
             <div class="text-center">
 
-                <h2 class="font-portfolio text-6xl md:text-7xl text-[#00385F] uppercase font-bold tracking-tight">
+                <h2 class="font-portfolio text-5xl sm:text-6xl md:text-7xl text-[#00385F] uppercase font-bold tracking-tight">
                     SKILLS & EXPERTISE
                 </h2>
 
             </div>
 
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6">
+
 
                 <!-- TECHNICAL -->
+
                 <div class="md:col-span-2 space-y-4">
 
                     <h3 class="font-portfolio text-2xl md:text-3xl text-[#00385F] uppercase font-bold">
                         ● TECHNICAL SKILLS
                     </h3>
 
-                    <div class="bg-white/80 border border-slate-200/80 rounded-2xl p-6 md:p-8 space-y-5 text-[#00385F] shadow-sm">
+                    <div class="bg-white/80 border border-slate-200/80 rounded-2xl p-5 md:p-8 space-y-5 text-[#00385F] shadow-sm">
+
 
                         <div class="border-b border-slate-100 pb-3">
 
@@ -311,7 +341,7 @@
                                 DATA ANALYTICS & BI
                             </h4>
 
-                            <p class="text-xs md:text-sm font-semibold tracking-wide text-slate-600 mt-1">
+                            <p class="text-[11px] md:text-sm font-semibold tracking-wide text-slate-600 mt-1 leading-relaxed">
                                 DATA ANALYTICS • DATA VISUALIZATION • DATA MINING • POWER BI
                             </p>
 
@@ -324,7 +354,7 @@
                                 DATABASE & QUERYING
                             </h4>
 
-                            <p class="text-xs md:text-sm font-semibold tracking-wide text-slate-600 mt-1">
+                            <p class="text-[11px] md:text-sm font-semibold tracking-wide text-slate-600 mt-1 leading-relaxed">
                                 SQL • DATABASE TECHNOLOGY • DATABASE DESIGN
                             </p>
 
@@ -337,7 +367,7 @@
                                 PROGRAMMING & LIBRARIES
                             </h4>
 
-                            <p class="text-xs md:text-sm font-semibold tracking-wide text-slate-600 mt-1">
+                            <p class="text-[11px] md:text-sm font-semibold tracking-wide text-slate-600 mt-1 leading-relaxed">
                                 PYTHON • PANDAS • NUMPY • MATPLOTLIB • SEABORN
                             </p>
 
@@ -350,7 +380,7 @@
                                 MATH & AI METHODS
                             </h4>
 
-                            <p class="text-xs md:text-sm font-semibold tracking-wide text-slate-600 mt-1">
+                            <p class="text-[11px] md:text-sm font-semibold tracking-wide text-slate-600 mt-1 leading-relaxed">
                                 BASIC STATISTICS • LINEAR ALGEBRA • PREDICTIVE ANALYTICS • AI / MACHINE LEARNING
                             </p>
 
@@ -362,13 +392,14 @@
 
 
                 <!-- SOFT SKILLS -->
+
                 <div class="space-y-4">
 
                     <h3 class="font-portfolio text-2xl md:text-3xl text-[#00385F] uppercase font-bold">
                         ● SOFT SKILLS
                     </h3>
 
-                    <div class="bg-white/80 border border-slate-200/80 rounded-2xl p-6 md:p-8 shadow-sm">
+                    <div class="bg-white/80 border border-slate-200/80 rounded-2xl p-5 md:p-8 shadow-sm">
 
                         <ul class="space-y-3 font-extrabold text-xs md:text-sm tracking-wider uppercase text-slate-700">
 
@@ -405,8 +436,9 @@
     </main>
 
 
-    <!-- FOOTER -->
-    <footer class="w-full max-w-6xl mx-auto text-center text-xs font-bold text-slate-400 py-6 border-t border-slate-200/60 mt-8">
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="w-full max-w-6xl mx-auto text-center text-[10px] md:text-xs font-bold text-slate-400 py-6 border-t border-slate-200/60 mt-8">
 
         © Felice Fernaldy • Portfolio
 
